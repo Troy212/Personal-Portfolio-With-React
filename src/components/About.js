@@ -12,13 +12,13 @@ import Images from '../assets/about.png';
 
 const About = () => {
   const [ref, inView] = useInView({
-    threshold: 0,
+    threshold: 0.2,
   });
 
   return (
     <section className='section' id='about' ref={ref}>
       <div className="container mx-auto">
-        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 min-h-screen'> {/* Changed h-screen to min-h-screen */}
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           {/* Image as background */}
           <motion.div 
             variants={fadeIn('right', 0.3)}
@@ -45,36 +45,36 @@ const About = () => {
               <span className='text-accent'>Coding Skills - </span> Python, HTML, CSS, React, Node.js, Streamlit, Firebase. <br />
               <span className='text-accent'>Video Editing Skills - </span> Adobe Premiere Pro, Adobe After Effects, Final Cut Pro, DaVinci. <br />
               <span className='text-accent'>Photo Editing Skills - </span> Adobe Photoshop, Canva. <br />
-              <span className='text-accent'>Audio Editing Skills:</span> Logic Pro X, Audacity. <br /><br /><br />
+              <span className='text-accent'>Audio Editing Skills:</span> Logic Pro X, Audacity.
             </p>
 
             {/* Stats */}
-            <div className='flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 mb-12'> {/* Adjusted flex layout for better responsiveness */}
-              <div className='flex flex-col items-center'> {/* Centered the content */}
+            <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+              <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-4'>
                   {inView ? <Countup start={0} end={12} duration={3} /> : null}
                 </div>
-                <div className='font-primary text-sm tracking-[2px] text-center'> {/* Centered text */}
+                <div className='font-primary text-sm tracking-[2px]'>
                   Projects <br />
                   Completed
                 </div>
               </div>
 
-              <div className='flex flex-col items-center'> {/* Centered the content */}
+              <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-4'>
                   {inView ? <Countup start={0} end={6} duration={3} /> : null}
                 </div>
-                <div className='font-primary text-sm tracking-[2px] text-center'> {/* Centered text */}
+                <div className='font-primary text-sm tracking-[2px]'>
                   Number of Languages <br />
                   Known
                 </div>
               </div>
 
-              <div className='flex flex-col items-center'> {/* Centered the content */}
+              <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-4'>
                   {inView ? <Countup start={0} end={1} duration={3} /> : null}
                 </div>
-                <div className='font-primary text-sm tracking-[2px] text-center'> {/* Centered text */}
+                <div className='font-primary text-sm tracking-[2px]'>
                   Attended Study Abroad Program at NUSS, Singapore
                 </div>
               </div>

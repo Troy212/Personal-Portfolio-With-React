@@ -18,7 +18,7 @@ const About = () => {
   return (
     <section className='section' id='about' ref={ref}>
       <div className="container mx-auto">
-        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 min-h-screen'> {/* Changed h-screen to min-h-screen */}
           {/* Image as background */}
           <motion.div 
             variants={fadeIn('right', 0.3)}
@@ -49,32 +49,32 @@ const About = () => {
             </p>
 
             {/* Stats */}
-            <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
-              <div>
+            <div className='flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 mb-12'> {/* Adjusted flex layout for better responsiveness */}
+              <div className='flex flex-col items-center'> {/* Centered the content */}
                 <div className='text-[40px] font-tertiary text-gradient mb-4'>
                   {inView ? <Countup start={0} end={12} duration={3} /> : null}
                 </div>
-                <div className='font-primary text-sm tracking-[2px]'>
+                <div className='font-primary text-sm tracking-[2px] text-center'> {/* Centered text */}
                   Projects <br />
                   Completed
                 </div>
               </div>
 
-              <div>
+              <div className='flex flex-col items-center'> {/* Centered the content */}
                 <div className='text-[40px] font-tertiary text-gradient mb-4'>
                   {inView ? <Countup start={0} end={6} duration={3} /> : null}
                 </div>
-                <div className='font-primary text-sm tracking-[2px]'>
+                <div className='font-primary text-sm tracking-[2px] text-center'> {/* Centered text */}
                   Number of Languages <br />
                   Known
                 </div>
               </div>
 
-              <div>
+              <div className='flex flex-col items-center'> {/* Centered the content */}
                 <div className='text-[40px] font-tertiary text-gradient mb-4'>
                   {inView ? <Countup start={0} end={1} duration={3} /> : null}
                 </div>
-                <div className='font-primary text-sm tracking-[2px]'>
+                <div className='font-primary text-sm tracking-[2px] text-center'> {/* Centered text */}
                   Attended Study Abroad Program at NUSS, Singapore
                 </div>
               </div>

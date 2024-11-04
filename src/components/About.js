@@ -80,8 +80,8 @@ const About = () => {
               </div>
             </div>
 
-            {/* Download button */}
-            <div className='flex gap-x-8 items-center'>
+            {/* Download and email buttons */}
+            <div className='flex flex-col gap-y-4 gap-x-8 lg:flex-row items-center'>
               <a href="/assets/Resume.pdf" download>
                 <button className='btn btn-lg'>Download CV</button>
               </a>

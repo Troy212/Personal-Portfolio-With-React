@@ -10,14 +10,14 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* logo */}
           <a href="#">
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="Logo" className="w-40 h-auto lg:w-48" />
           </a>
           {/* button */}
           <Link
             to="contact"
             smooth={true}
             duration={500}
-            className="btn btn-sm flex lg:items-center text-center cursor-pointer"
+            className="btn btn-sm flex justify-center items-center text-center cursor-pointer"
           >
             Work With Me
           </Link>

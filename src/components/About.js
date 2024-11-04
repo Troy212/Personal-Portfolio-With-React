@@ -45,7 +45,7 @@ const About = () => {
               <span className='text-accent'>Coding Skills - </span> Python, HTML, CSS, React, Node.js, Streamlit, Firebase. <br />
               <span className='text-accent'>Video Editing Skills - </span> Adobe Premiere Pro, Adobe After Effects, Final Cut Pro, DaVinci. <br />
               <span className='text-accent'>Photo Editing Skills - </span> Adobe Photoshop, Canva. <br />
-              <span className='text-accent'>Audio Editing Skills:</span> Logic Pro X, Audacity.
+              <span className='text-accent'>Audio Editing Skills:</span> Logic Pro X, Audacity. <br /><br /><br />
             </p>
 
             {/* Stats */}

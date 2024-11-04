@@ -37,8 +37,8 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1'>
             <h2 className='h2 text-accent'>About me.</h2>
-            <h3 className='h3 mb-4'>
-              I am a <span className='text-accent'>Python Developer</span> and <span className='text-accent'>Web Developer</span> with skills in <span className='text-accent'>Video</span> and <span className='text-accent'>Photo Editing</span>. I completed my <span className='text-accent'>High School</span> at <span className='text-accent'>Springdale High School</span> in Kalyani and am currently pursuing a <span className='text-accent'>B.Tech in Computer Science</span> at the <span className='text-accent'>Institute of Engineering and Management</span> in Salt Lake.
+            <h3 className='h3 mb-3'>
+              <span className='text-sm'>I am a <span className='text-accent'>Python</span> and <span className='text-accent'>Web Developer</span> with expertise in <span className='text-accent'>video</span> and <span className='text-accent'>photo editing</span>. Currently, I'm pursuing a <span className='text-accent'>B.Tech in Computer Science</span> at the <span className='text-accent'>Institute of Engineering and Management</span> in Salt Lake, after completing high school at <span className='text-accent'>Springdale High School</span> in Kalyani.</span>
             </h3>
             <p className='mb-6 text-white'>
               <span className='text-accent'>Languages - </span> Bengali (Mother Tongue), English (Fluent), Hindi (Fluent). <br />
@@ -51,7 +51,7 @@ const About = () => {
             {/* Stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[40px] font-tertiary text-gradient mb-4'>
                   {inView ? <Countup start={0} end={12} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -61,7 +61,7 @@ const About = () => {
               </div>
 
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[40px] font-tertiary text-gradient mb-4'>
                   {inView ? <Countup start={0} end={6} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -71,7 +71,7 @@ const About = () => {
               </div>
 
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[40px] font-tertiary text-gradient mb-4'>
                   {inView ? <Countup start={0} end={1} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>

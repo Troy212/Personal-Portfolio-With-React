@@ -10,12 +10,12 @@ import { fadeIn } from '../variants';
 const services = [
   {
     name: 'Movie Recommendation System',
-    description: 'A Movie Recommendation System created using a custom datasetA Movie Recommendation System created using a custom dataset created through machine learning from the 5000 TMDB dataset, and it is deployed on Vercel. derived from the 5000 TMDB dataset, and it is deployed on Vercel',
+    description: 'A Movie Recommendation System created using a custom dataset derived from the 5000 TMDB dataset, and it is deployed on Vercel.',
     link: 'https://github.com/Troy212/Movie-Recommendation-System',
   },
   {
     name: 'UPI Fraud Detector',
-    description: 'An UPI Fraud Detector System built with Streamlit that detects fraudulent transactions using transaction IDs',
+    description: 'An UPI Fraud Detector System built with Streamlit that detects fraudulent transactions using transaction IDs.',
     link: 'https://github.com/Troy212/UPI-Fraud',
   },
   {
@@ -27,7 +27,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className='section' id='services'>
+    <section className='section mt-96 md:mt-0' id='services'> {/* Significantly increased margin-top for mobile */}
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
           {/* Text & Image */}
@@ -39,7 +39,7 @@ const Services = () => {
             viewport={{ once: false, amount: 0.3 }}
           >
             <h2 className='h2 text-accent mb-6'>What I Do</h2>
-            <h3 className='h3 max-w-[455px] mb-12'> {/* Reduced from mb-16 to mb-12 */}
+            <h3 className='h3 max-w-[455px] mb-12'>
               I am a Python Developer, Web Developer, Video Editor, and Photo Editor with a passion for creating engaging and user-friendly experiences.
             </h3>
             <a href="https://github.com/Troy212" className='btn btn-sm px-6 py-3 text-lg'>
@@ -51,18 +51,18 @@ const Services = () => {
             {/* Services list */}
             <div>
               {services.map((service, index) => {
-                const { name, description, link } = service; // Destructure services
+                const { name, description, link } = service;
                 return (
                   <motion.div
                     key={index}
-                    className='mb-4'
-                    variants={fadeIn('left', 0.5)} // Apply fadeIn variant with delay
+                    className='mb-8' // Increased margin-bottom for additional spacing between items
+                    variants={fadeIn('left', 0.5)}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: false, amount: 0.3 }}
                   >
                     {/* Service content */}
-                    <div className='pb-2 mb-2'> {/* Reduced from pb-4 mb-4 to pb-2 mb-2 */}
+                    <div className='pb-4 mb-4'> {/* Added more padding-bottom */}
                       <h4 className='font-bold'>{name}</h4>
                       <p>{description}</p>
                     </div>
@@ -71,7 +71,7 @@ const Services = () => {
                       Learn more <BsArrowUpRight className='inline-block ml-1' />
                     </a>
                     {/* Border line under the Learn more link */}
-                    <div className='border-b border-white/20 pb-2 mb-4' /> {/* Reduced padding below the border */}
+                    <div className='border-b border-white/20 pb-4 mb-8' /> {/* Added more padding-bottom */}
                   </motion.div>
                 );
               })}

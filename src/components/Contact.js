@@ -65,9 +65,9 @@ const Contact = () => {
   };
 
   return (
-    <section className='py-16 lg:section' id='contact'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row'>
+    <section className='py-16 lg:py-20' id='contact'>
+      <div className='container mx-auto h-full'>
+        <div className='flex flex-col lg:flex-row items-start h-full'>
           {/* Text */}
           <motion.div 
             variants={fadeIn('up', 0.3)}
@@ -77,7 +77,7 @@ const Contact = () => {
             className='flex-1 flex justify-start'>
             <div>
               <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>get in touch</h4>
-              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
+              <h2 className='text-[45px] lg:text-[90px] leading-none mb-8'>
                 Let's work <br /> together
               </h2>
             </div>
@@ -88,7 +88,7 @@ const Contact = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.7 }}
-            className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6'>
+            className='flex-1 border rounded-2xl flex flex-col gap-y-6 p-6 h-full'>
             <form onSubmit={postUserData}>
               <input 
                 className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
@@ -109,7 +109,7 @@ const Contact = () => {
                 required
               />
               <textarea 
-                className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12' 
+                className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-8' 
                 name='YourMessage'
                 placeholder='Your Message'
                 value={userData.YourMessage}

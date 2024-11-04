@@ -12,7 +12,7 @@ import Images from '../assets/about.png';
 
 const About = () => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0,
   });
 
   return (

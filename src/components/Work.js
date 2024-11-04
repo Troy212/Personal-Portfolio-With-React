@@ -85,12 +85,12 @@ const Work = () => {
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
                 <h4 className='font-semibold'>
                   <a href="https://github.com/Troy212/Movie-Recommendation-System" target="_blank" rel="noopener noreferrer">
-                    <span className='text-gradient'>Movie Recommendation System</span>
+                    <span className='text-gradient'>Movie Rec. System</span>
                   </a>
                 </h4>
                 <span className='block'>
                   <a href="https://github.com/Troy212/Movie-Recommendation-System" target="_blank" rel="noopener noreferrer">
-                    Machine Learning , Streamlit , Python
+                    Machine Learning , Flask , Python
                   </a>
                 </span>
               </div>

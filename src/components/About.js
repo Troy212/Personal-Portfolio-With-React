@@ -65,7 +65,7 @@ const About = () => {
                   {inView ? <Countup start={0} end={6} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
-                  Number of Languages <br />
+                  Number of Programming Languages <br />
                   Known
                 </div>
               </div>

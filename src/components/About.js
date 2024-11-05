@@ -82,7 +82,7 @@ const About = () => {
 
             {/* Download and email buttons */}
             <div className='flex flex-col gap-y-4 gap-x-8 lg:flex-row items-center'>
-              <a href="/assets/Resume.pdf" download>
+              <a href="/Resume.pdf" download>
                 <button className='btn btn-lg'>Download CV</button>
               </a>
               <a href='mailto:dsrinjoy58@gmail.com' className='text-gradient btn-link'>My Email - dsrinjoy58@gmail.com</a>

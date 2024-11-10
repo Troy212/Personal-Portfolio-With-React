@@ -49,19 +49,19 @@ const Work = () => {
               {/* Overlay for Tint */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* Image with Link */}
-              <a href="https://github.com/Troy212/Waste" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Troy212/ChatGPT-Clone-Using-Streamlit/tree/main" target="_blank" rel="noopener noreferrer">
                 <img src={img1} alt="Project 1" className='w-full h-[200px] object-cover group-hover:scale-125 transition-all duration-500' />
               </a>
               {/* Project Details */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
                 <h4 className='font-semibold'>
-                  <a href="https://github.com/Troy212/Waste" target="_blank" rel="noopener noreferrer">
-                  <span className='text-gradient'>Waste Management System</span>
+                  <a href="https://github.com/Troy212/ChatGPT-Clone-Using-Streamlit/tree/main" target="_blank" rel="noopener noreferrer">
+                  <span className='text-gradient'>ChatGPT Clone</span>
                   </a>
                 </h4>
                 <span className='block'>
-                  <a href="https://github.com/Troy212/Waste" target="_blank" rel="noopener noreferrer">
-                    Firebase , HTML , CSS
+                  <a href="https://github.com/Troy212/ChatGPT-Clone-Using-Streamlit/tree/main" target="_blank" rel="noopener noreferrer">
+                    Python, Streamlit
                   </a>
                 </span>
               </div>

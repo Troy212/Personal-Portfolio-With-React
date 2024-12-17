@@ -135,19 +135,19 @@ const Work = () => {
               {/* Overlay for Tint */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* Image with Link */}
-              <a href="https://github.com/Troy212/Personal-Portfolio-With-React" target="_blank" rel="noopener noreferrer">
+              <a href="https://soundify-by-troy.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <img src={img4} alt="Project 4" className='w-full h-[200px] object-cover group-hover:scale-125 transition-all duration-500' />
               </a>
               {/* Project Details */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
                 <h4 className='font-semibold'>
-                  <a href="https://github.com/Troy212/Personal-Portfolio-With-React" target="_blank" rel="noopener noreferrer">
-                    <span className='text-gradient'>Personal Portfolio</span>
+                  <a href="https://soundify-by-troy.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <span className='text-gradient'>Soundify</span>
                   </a>
                 </h4>
                 <span className='block'>
-                  <a href="https://github.com/Troy212/Personal-Portfolio-With-React" target="_blank" rel="noopener noreferrer">
-                    React , JavaScript , Firebase
+                  <a href="https://soundify-by-troy.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    React , NextJs , Supabase
                   </a>
                 </span>
               </div>
